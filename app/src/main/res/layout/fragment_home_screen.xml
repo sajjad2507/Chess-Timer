@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211F20"
+    android:padding="16dp"
+    tools:context=".fragment.HomeScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:gravity="center"
+            android:text="Chess Timer \nClock"
+            android:textColor="#EDEDED"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/clock"
+            app:tint="#EDEDED" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No. of Players"
+            android:textColor="#EDEDED"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/edtNumberOfPlayers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_edt"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#EDEDED"
+            android:textColorHint="#EDEDED"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Initial Time(mintue)"
+            android:textColor="#EDEDED"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtInitialTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_edt"
+            android:inputType="number"
+            android:padding="15dp"
+            android:text="10"
+            android:textColor="#EDEDED"
+            android:textColorHint="#EDEDED"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Increament Time(second)"
+            android:textColor="#EDEDED"
+            android:textSize="18sp" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/edtIncreamentTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_edt"
+            android:inputType="number"
+            android:padding="15dp"
+            android:text="5"
+            android:textColor="#EDEDED"
+            android:textColorHint="#EDEDED"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/startGameBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="Move Next"
+            android:textColor="#fff"
+            android:textSize="15.5sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
